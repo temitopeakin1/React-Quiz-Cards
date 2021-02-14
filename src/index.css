@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(33, 175, 223)
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1rem 15rem;
+}
+
+@media (max-width: 991px){
+  .container{
+    margin: 1rem 2rem;
+  }
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffa500;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  padding: 0 1.5rem;
+}
+
+.form-group {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group > label {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+  margin-top: 0.25rem;
+}
+
+.form-group > p {
+  font-size: 1.0rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 2px;
+}
+
+@media (max-width: 991px) {
+  .form-group > p {
+    font-size: 0.75rem;
+  }
+}
+
+.btn {
+  background-color: #dc143c;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.6em;
+  cursor: pointer;
+  margin-bottom: -20px;
+}
+
+.btn:hover {
+  background-color: hsl(200, 100%, 40%);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.30rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.card-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 4fr));
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  --translate-y: 2.5px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card .front {
+  left: 0;
+}
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  padding: 1rem;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.flashcard-options {
+  margin-top: 0.5rem;
+}
+
+.flashcard-option {
+  margin-top: 0.25rem;
+  color: #555;
+  font-size: 0.75rem;
+}
+
+.flashcard-option:first-child {
+  margin-top: 0;
+}
