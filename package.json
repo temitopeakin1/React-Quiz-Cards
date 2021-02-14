@@ -1,5 +1,5 @@
 {
-  "name": "quizcards",
+  "name": "quiz-cards",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,8 +25,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://automedon.github.io/Cards-Quizes/",
-  "author": "Automedon",
+  "author": "Tmegha",
   "browserslist": {
     "production": [
       ">0.2%",
