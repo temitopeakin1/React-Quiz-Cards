@@ -78,7 +78,7 @@ function App() {
           <button className="btn">Initiate</button>
         </div>
         <div className="form-group">
-          <p>*Just for fun enjoy*</p>
+          <p>*Just for fun, Enjoy*</p>
         </div>
       </form>
       <div className="container">
