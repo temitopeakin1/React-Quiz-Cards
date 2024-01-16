@@ -8,7 +8,7 @@ function App() {
   const [flashCards, setFlashCards] = useState<any>([]);
   const [categories, setCategories] = useState<any>([]);
   useEffect(() => {
-    axios.get("https://opentdb.com/api_category.php").then((res) => {
+    axios.get("https://opentdb.com/api_category.php").then((res: any) => {
       setCategories(res.data.trivia_categories);
     });
   }, []);
@@ -27,7 +27,7 @@ function App() {
           category: categoryEl.current?.value,
         },
       })
-      .then((res) => {
+      .then((res: any) => {
         setFlashCards(
           res.data.results.map((questionItem: any, index: number) => {
             const answer = questionItem.correct_answer;
