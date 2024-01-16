@@ -78,7 +78,7 @@ function App() {
           <button className="btn">Initiate</button>
         </div>
         <div className="form-group">
-          <p>*Developed by Akinmegha Temitope*</p>
+          <p>*Just for fun, Enjoy*</p>
         </div>
       </form>
       <div className="container">
