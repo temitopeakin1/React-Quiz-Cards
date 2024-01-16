@@ -37,5 +37,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "A Simple Quiz App, Highly Responsive with appealing UI made with Node, ReactJs and Axios",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temitopeakin1/React-Quiz-Cards.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temitopeakin1/React-Quiz-Cards/issues"
+  },
+  "homepage": "https://github.com/temitopeakin1/React-Quiz-Cards#readme"
 }
