@@ -1,14 +1,17 @@
 import React from "react";
 import FlashCard from "./FlashCard";
 
-interface FlashCardListProps {
-  flashcards: {
-    id: number;
-    question: string;
-    answer: string;
-    options: string[];
-  }[];
+interface FlashCard {
+  id: string;
+  question: string;
+  answer: string;
+  options: string[];
 }
+  
+  interface FlashCardListProps {
+    flashcards: FlashCard[];
+  }
+
 
 const FlashCardList: React.FC<FlashCardListProps> = ({ flashcards }) => {
   return (
